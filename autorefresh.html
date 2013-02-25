@@ -1,5 +1,5 @@
 <head>
-<title>Radiator</title>
+<title>Autorefresher</title>
 <meta http-equiv="refresh" content="60">
 </head>
 <body>
@@ -18,14 +18,7 @@ var url = gup ('url');
 var width = (window.innerWidth - 17);
 var height = (window.innerHeight - 17);
 
-
-document.write('<iframe name="radiatorFrame" ID="radiatorFrame" src="',url,'" seamless frameborder="0" width="',width,'" height="',height,'"></iframe>');
-
-var iframe = top.frames[name].document;
-var css = '<link href="style..css" type="text/css" rel="stylesheet" />';
-iframe.open();
-iframe.write(css);
-iframe.close();
+document.write('<iframe src="',url,'" seamless frameborder="0" width="',width,'" height="',height,'"></iframe>');
 
 </script>
 
